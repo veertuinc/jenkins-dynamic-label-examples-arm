@@ -1,5 +1,5 @@
 def AGENT_LABEL = createDynamicAnkaNode(
-  masterVmId: 'c0847bc9-5d2d-4dbc-ba6a-240f7ff08032',
+  masterVmId: '9bf0318f-5c58-4142-b544-cf743a087a41',
   tag: 'v1',
   launchMethod: 'ssh',
   credentialsId: 'anka',
@@ -24,7 +24,7 @@ pipeline {
             script {
               NESTED_LABEL = createDynamicAnkaNode(
                 launchMethod: 'jnlp', 
-                masterVmId: 'c0847bc9-5d2d-4dbc-ba6a-240f7ff08032',
+                masterVmId: '9bf0318f-5c58-4142-b544-cf743a087a41',
                 tag: 'v1',
                 nameTemplate: 'nested-failing-example-nested',
                 saveImage: true, 
